@@ -1,0 +1,3 @@
+[submodule "FRONTEND/GerenciadorDeTarefas"]
+	path = FRONTEND/GerenciadorDeTarefas
+	url = https://github.com/esveraldo/desafio-backend-webapi.git
