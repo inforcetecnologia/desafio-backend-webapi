@@ -10,4 +10,7 @@
 ## Sobre a estrutura:
 - Foi mantido o pedido, o mais simples possível, utilizando técnicas de SOLID e de fácil leitura;
 
---##--
+## Implementação
+
+- Do backend: Rodar normalmente no VS ou VSC
+- Do frontend: Entrar na pasta FRONTEND\GerenciadorDeTarefas e aplicar o comando ng serve
