@@ -1,0 +1,25 @@
+<button class="btn btn-primary" [routerLink]="['/cadastro-de-tarefas']" routerLinkActive="router-link-active" >Cadastrar nova tarefa</button>
+<table class="table" style="margin-top: 10px;">
+  <thead class="thead-dark">
+    <tr>
+      <th>Titulo</th>
+      <th>Descricao</th>
+      <th>Data de Criação</th>
+      <th>Data de Atualização</th>
+      <th>Açoes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let tarefa of tarefas">
+      <td>{{tarefa.titulo}}</td>
+      <td>{{tarefa.descricao}}</td>
+      <td>{{tarefa.dataDeCriacao}}</td>
+      <td>{{tarefa.dataDeAtualizacao}}</td>
+      <td>
+        <button class="btn btn-success" style="margin-right: 3px;" [routerLink]="['/tarefa-selecionada']" [queryParams]="{id: tarefa.id}" routerLinkActive="router-link-active">Detalhes</button>
+        <button class="btn btn-warning" style="margin-right: 3px;">Editar</button>
+        <button class="btn btn-danger" (click)="deletar(tarefa.id)">Excluir</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
