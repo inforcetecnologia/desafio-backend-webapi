@@ -9,3 +9,5 @@
 
 ## Sobre a estrutura:
 - Foi mantido o pedido, o mais simples possível, utilizando técnicas de SOLID e de fácil leitura;
+
+--##--
